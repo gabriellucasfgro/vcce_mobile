@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/navigation_graph"
+            app:startDestination="@+id/listAlunosFragment">
+
+    <fragment android:id="@+id/listAlunosFragment"
+              android:name="com.example.gabriellucas.vcce.ui.ListAlunosFragment"
+              android:label="fragment_alunos"
+              tools:layout="@layout/fragment_list_alunos"
+    >
+        <action
+                android:id="@+id/toAlunoDetalhes"
+                app:destination="@id/alunoDetalhesFragment"
+        />
+    </fragment>
+
+    <fragment android:id="@+id/alunoDetalhesFragment"
+              android:name="com.example.gabriellucas.vcce.ui.AlunoDetalhesFragment"
+              android:label="fragment_aluno_detalhes"
+              tools:layout="@layout/fragment_aluno_detalhes"
+    >
+        <argument android:name="aluno" app:argType="com.example.gabriellucas.vcce.entities.Aluno"/>
+    </fragment>
+</navigation>

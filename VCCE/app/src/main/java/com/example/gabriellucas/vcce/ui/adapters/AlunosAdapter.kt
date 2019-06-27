@@ -35,7 +35,7 @@ class AlunosAdapter(var alunos: List<Aluno>) :
             itemView.tvAno.text = aluno.ano
             Picasso
                 .get()
-                .load("http://192.168.0.102:81/api/get/aluno/foto/"+aluno.foto)
+                .load("http://10.0.2.2:8000/api/get/aluno/foto/"+aluno.foto)
                 .into(itemView.imgFoto)
 
             val bundle = Bundle()

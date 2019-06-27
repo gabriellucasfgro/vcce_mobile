@@ -14,6 +14,8 @@
                 android:id="@+id/toAlunoDetalhes"
                 app:destination="@id/alunoDetalhesFragment"
         />
+        <action android:id="@+id/toValidarQr_list"
+                app:destination="@id/validarQrFragment"/>
     </fragment>
 
     <fragment android:id="@+id/alunoDetalhesFragment"
@@ -22,5 +24,9 @@
               tools:layout="@layout/fragment_aluno_detalhes"
     >
         <argument android:name="aluno" app:argType="com.example.gabriellucas.vcce.entities.Aluno"/>
+        <action android:id="@+id/toValidarQr_detalhes"
+                app:destination="@id/validarQrFragment"/>
     </fragment>
+    <fragment android:id="@+id/validarQrFragment" android:name="com.example.gabriellucas.vcce.ui.ValidarQrFragment"
+              android:label="fragment_valida_qrcode" tools:layout="@layout/fragment_valida_qrcode"/>
 </navigation>

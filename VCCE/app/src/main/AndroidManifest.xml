@@ -3,6 +3,7 @@
           package="com.example.gabriellucas.vcce">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
 
     <application
             android:allowBackup="true"
@@ -13,11 +14,14 @@
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
         <activity
+                android:screenOrientation="portrait"
+                android:clearTaskOnLaunch="true"
+                android:stateNotNeeded="true"
                 android:name=".app.ECCEActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
                 <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="com.google.zxing.client.android.SCAN"/>
             </intent-filter>
         </activity>
     </application>

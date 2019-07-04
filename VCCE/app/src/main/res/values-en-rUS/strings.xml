@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VCCE</string>
+    <string name="ano">Year:</string>
+    <string name="campus">Campus:</string>
+    <string name="cpf">CPF:</string>
+    <string name="curso">Grade:</string>
+    <string name="ler_qrcode">Read QRCode</string>
+    <string name="matricula">Registration ID:</string>
+    <string name="modalidade">Modality:</string>
+    <string name="nascimento">" Date of birth:"</string>
+    <string name="naturalidade">Naturalness</string>
+    <string name="nome">Name:</string>
+    <string name="rg">RG:</string>
+    <string name="title_alunos">List</string>
+    <string name="title_qr">Validate QR Code</string>
+    <string name="validade">Validity:</string>
+</resources>

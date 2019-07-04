@@ -22,4 +22,6 @@ class ECCEActivity : AppCompatActivity() {
                 Navigation.findNavController(this, R.id.fragmentContent))
         }
     }
+
+
 }

@@ -33,16 +33,16 @@ class ValidarQrFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        setRetainInstance(true)
         return inflater.inflate(R.layout.fragment_valida_qrcode, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        setRetainInstance(true)
         configureRetrofit()
-
         btLer.setOnClickListener {
-            IntentIntegrator.forSupportFragment(this).initiateScan()
+            IntentIntegrator.forSupportFragment(this).setOrientationLocked(true).initiateScan()
         }
     }
 
@@ -51,7 +51,7 @@ class ValidarQrFragment : Fragment() {
             .setDateFormat("yyyy-MM-dd'T'HH:mm:ss").create()
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://192.168.0.102:8000")
+            .baseUrl("http://10.20.23.105:8000")
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
         service = retrofit.create<ECCEService>(ECCEService::class.java)

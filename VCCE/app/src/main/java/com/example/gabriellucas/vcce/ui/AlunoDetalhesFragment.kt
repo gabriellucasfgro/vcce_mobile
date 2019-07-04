@@ -41,7 +41,7 @@ class AlunoDetalhesFragment : Fragment() {
             .setDateFormat("yyyy-MM-dd'T'HH:mm:ss").create()
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://192.168.0.102:8000")
+            .baseUrl("http://10.20.23.105:8000")
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
         service = retrofit.create<ECCEService>(ECCEService::class.java)
@@ -86,7 +86,7 @@ class AlunoDetalhesFragment : Fragment() {
 
         Picasso
             .get()
-            .load("http://192.168.0.102:8000/api/get/aluno/foto/"+aluno.foto)
+            .load("http://10.20.23.105:8000/api/get/aluno/foto/"+aluno.foto)
             .into(view.imgDetalhe)
 
         view.txtMatricula.setText(aluno.matricula)

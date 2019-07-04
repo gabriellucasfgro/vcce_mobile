@@ -15,9 +15,11 @@
             tools:ignore="GoogleAppIndexingWarning"
             android:usesCleartextTraffic="true">
         <activity
-                android:screenOrientation="portrait"
+                android:screenOrientation="fullSensor"
+                tools:replace="screenOrientation"
                 android:clearTaskOnLaunch="true"
                 android:stateNotNeeded="true"
+                android:configChanges="orientation|screenSize"
                 android:name=".app.ECCEActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

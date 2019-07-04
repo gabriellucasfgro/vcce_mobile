@@ -58,7 +58,7 @@ class ListAlunosFragment : Fragment() {
             .setDateFormat("yyyy-MM-dd'T'HH:mm:ss").create()
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://10.0.2.2:8000")
+            .baseUrl("http://192.168.0.102:8000")
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
         service = retrofit.create<ECCEService>(ECCEService::class.java)

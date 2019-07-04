@@ -28,5 +28,10 @@
                 app:destination="@id/validarQrFragment"/>
     </fragment>
     <fragment android:id="@+id/validarQrFragment" android:name="com.example.gabriellucas.vcce.ui.ValidarQrFragment"
-              android:label="fragment_valida_qrcode" tools:layout="@layout/fragment_valida_qrcode"/>
+              android:label="fragment_valida_qrcode" tools:layout="@layout/fragment_valida_qrcode">
+        <action android:id="@+id/toAlunoDetalhes_validar"
+                app:destination="@id/alunoDetalhesFragment" app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim" app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+                app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
 </navigation>

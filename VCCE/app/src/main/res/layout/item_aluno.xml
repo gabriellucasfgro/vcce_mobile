@@ -16,7 +16,6 @@
                 android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"/>
         <TextView
-                android:text="TextView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/tvNome"
@@ -25,7 +24,6 @@
                 android:textSize="18sp" app:layout_constraintStart_toEndOf="@+id/imgFoto"
                 android:layout_marginStart="8dp" android:layout_marginLeft="8dp"/>
         <TextView
-                android:text="TextView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/tvCurso"
@@ -34,7 +32,6 @@
                 android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"/>
         <TextView
-                android:text="TextView"
                 android:layout_width="0dp"
                 android:layout_height="15dp"
                 android:id="@+id/tvAno"
